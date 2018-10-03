@@ -8,12 +8,13 @@ function drawApp(listView, catView) {
 
 async function main() {
     await db.load();
-    console.log(db.data)
-    document.db = db;
-    let listView = new CatListView(db.data);
+    
+    const listView = new CatListView(db.data);
+
     window.listItemClick = (name) => {
         drawApp(listView, new CatView(db.lookup(name)));
     }
+    
     window.catClick = (name) => {
         let cat = db.lookup(name);
         cat.click();
@@ -24,4 +25,3 @@ async function main() {
 }
 
 main()
-
