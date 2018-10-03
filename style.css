@@ -1,0 +1,46 @@
+.cat-list {
+    float: right;
+}
+
+.cat-list li {
+    display: block;
+    width: 200px;
+    padding: 5px 20px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    margin: 5px;
+}
+
+.cat-list li:active { 
+    background-color: lightgreen;
+}
+
+.cat-list li:hover { 
+    cursor: pointer;
+}
+
+div.cat {
+    width: 300px;
+    background-color: lightcoral;
+    padding: 10px;
+}
+
+div.cat img {
+    display: inline-block;
+    text-align: center;
+}
+
+.cat * {
+    display: block;
+    text-align: center;
+}
+
+.cat:hover { 
+    cursor: pointer;
+}
+
+#app {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 800px;
+}
